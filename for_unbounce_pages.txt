@@ -9,9 +9,21 @@
 			valid = true;
     }).always(() => {
 		if (valid) {
-			// Here add code in case if fbclid is valid
+			/*
+				Here add code in case if fbclid is valid
+				Example:
+
+				$('.layout-1').show(); 
+				$('.layout-2').hide();
+			*/
 	    } else {
-			// Here add code in case if fbclid is not valid
+			/*
+				Here add code in case if fbclid is not valid
+				Example:
+
+				$('.layout-1').hide(); 
+				$('.layout-2').show();
+			*/
     	}
     });
 </script>

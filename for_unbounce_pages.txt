@@ -1,0 +1,18 @@
+<script>
+	const url = new URL(window.location.href);
+	const fbclid = url.searchParams.get('fbclid');
+  
+	let valid = false;
+  
+	$.get(`https://YourDoamin.LTD/is-valid-fbclid/?fbclid=${fbclid}`, (response) => {
+		if (response.result)
+			valid = true;
+    }).always(() => {
+		if (valid) {
+			// Here add code in case if fbclid is valid
+	    } else {
+			// Here add code in case if fbclid is not valid
+    	}
+    });
+</script>
+
